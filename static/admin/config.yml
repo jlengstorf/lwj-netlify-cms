@@ -35,6 +35,16 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
 
+  - name: 'events'
+    label: 'Events'
+    folder: 'src/pages/events'
+    create: true
+    slug: 'event-{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+
   - name: 'pages'
     label: 'Pages'
     files:
